@@ -730,7 +730,7 @@
         </div>
       </div>
 
-      <form id="submit-form" action="https://usebasin.com/f/84e4b85c3f69" role="form" class="php-email-form mt-4">
+      <form id="submit-form" action="https://usebasin.com/f/84e4b85c3f69" role="form" class="php-email-form mt-4" method="POST">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -750,7 +750,10 @@
           <div class="error-message"></div>
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit" value="Send">Send Message</button></div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+        <label for="email"> Email: </label>
+  <input type="email" id="email" name="email">
+  <input type="submit" value="Submit">
       </form>
 
     </div>
